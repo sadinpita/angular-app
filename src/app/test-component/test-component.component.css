@@ -1,0 +1,12 @@
+p {
+    font-family: 'Montserrat';
+}
+
+.test-comp-wrapper {
+     margin: 0 auto;
+     width: 50%;
+     text-align: center;
+     background-color: #eee;
+     border-radius: 3px;
+     padding: 20px;
+}

@@ -1,0 +1,18 @@
+<div class="test-comp-wrapper">
+     <p>Test component</p>
+
+     <button mat-button (click)="changeSentence ('Text changed by clicking button!');">Change sentence!</button>
+
+     <p>{{testSentence}}</p>
+
+
+     <form class="example-form">
+          <mat-form-field class="example-full-width">
+               <input
+                    matInput
+                    placeholder="Type in to change sentence."
+                    value=""
+                    (input)="changeSentence($event.target.value)">
+          </mat-form-field>
+     </form>
+</div>
