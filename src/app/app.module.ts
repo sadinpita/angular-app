@@ -21,12 +21,12 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     TestComponentComponent
   ],
   imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatButtonModule,
-    MatCheckboxModule,
-    MatFormFieldModule,
-    MatInputModule    
+     BrowserModule,
+     BrowserAnimationsModule,
+     MatButtonModule,
+     MatCheckboxModule,
+     MatFormFieldModule,
+     MatInputModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

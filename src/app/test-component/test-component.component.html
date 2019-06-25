@@ -9,12 +9,12 @@
                <input
                     matInput
                     placeholder="Type in to change sentence."
-                    value=""
+                    value=''
                     (input)="changeSentence($event.target.value)">
           </mat-form-field>
      </form>
 
      <button class="change-sentence-btn" mat-button (click)="changeSentence ('Text changed by clicking button!');">Change sentence to static text!</button>
-     <button mat-button (click)="clearText();" class="clear-btn">Clear text!</button>
+     <button mat-raised-button [disabled]="!testSentence" (click)="clearText();"c>Clear text!</button>
      <div *ngIf="showClearMsg === true" class="clear-msg">Sentence is cleared!</div>
 </div>
