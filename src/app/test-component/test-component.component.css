@@ -1,5 +1,9 @@
-p {
-    font-family: 'Montserrat';
+.component-title {
+     text-align: left;
+     font-size: 18px;
+     font-weight: 600;
+     color: #848484;
+     margin-top: 0;
 }
 
 .test-comp-wrapper {
@@ -9,4 +13,25 @@ p {
      background-color: #eee;
      border-radius: 3px;
      padding: 20px;
+}
+
+.change-sentence-btn {
+     color: white;
+     font-weight: 300;
+     background-color: #9463d8;
+     margin-right: 10px;
+}
+
+.clear-btn {
+     background-color: #484848;
+     color: white;
+     font-weight: 300;
+}
+
+.clear-msg {
+     background-color: #dedede;
+     padding: 10px;
+     color: #9463d8;
+     border-radius: 3px;
+     margin-top: 10px;
 }

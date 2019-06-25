@@ -1,10 +1,8 @@
 <div class="test-comp-wrapper">
-     <p>Test component</p>
+     <p class="component-title">Test component</p>
 
-     <button mat-button (click)="changeSentence ('Text changed by clicking button!');">Change sentence!</button>
 
      <p>{{testSentence}}</p>
-
 
      <form class="example-form">
           <mat-form-field class="example-full-width">
@@ -15,4 +13,8 @@
                     (input)="changeSentence($event.target.value)">
           </mat-form-field>
      </form>
+
+     <button class="change-sentence-btn" mat-button (click)="changeSentence ('Text changed by clicking button!');">Change sentence to static text!</button>
+     <button mat-button (click)="clearText();" class="clear-btn">Clear text!</button>
+     <div *ngIf="showClearMsg === true" class="clear-msg">Sentence is cleared!</div>
 </div>
