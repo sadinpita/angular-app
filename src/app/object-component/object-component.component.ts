@@ -1,4 +1,25 @@
 import { Component, OnInit } from '@angular/core';
+import { truncateSync } from 'fs';
+
+class Sandwich {
+     name: string;
+     cheese: boolean;
+     sauces: string[] = [];
+
+     constructor (sauces?: string[], name?: string , cheese?: boolean) {
+          this.name = name;
+          this.cheese = cheese;
+          this.sauces = sauces;
+     }
+
+     addSauce (sauce: string) {
+          this.sauces.push(sauce);
+     }
+
+     changeCheese (cheese: boolean) {
+          this.cheese = cheese;
+     }
+}
 
 type Pizza = {
      name: string,
@@ -17,6 +38,10 @@ export class ObjectComponentComponent implements OnInit {
      ngOnInit() {
      }
 
+     inputValue: string;
+
+     tasty = new Sandwich([] , 'Tasty', false)
+     
      pizza: Pizza = {
           name: 'Blazing Inferno',
           toppings: 5

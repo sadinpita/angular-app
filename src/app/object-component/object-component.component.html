@@ -16,4 +16,28 @@
                {{user.name}}
           </div>
      </div>
+
+     <p class="comp-subtitle">This is sandwich test.</p>
+
+     This sandwich is called {{tasty.name}}.
+     <div *ngIf="tasty.cheese">This sandwich is with cheese.</div>
+     <div *ngIf="!tasty.cheese">This sandwich is not with cheese.</div><br>
+     <div>Sauces in this sandwich are:</div>
+     <ul class="sauces-list">
+          <li *ngFor="let sauce of tasty.sauces">{{sauce}}</li>
+     </ul>
+
+     <form class="example-form">
+          <mat-form-field class="example-full-width">
+               <input
+                    matInput
+                    placeholder="Type in sauce you want to add."
+                    value=''
+                    [(ngModel)]="inputValue"
+                    name="something">
+          </mat-form-field>
+     </form>
+
+     <button class="change-cheese-btn"  mat-button color="primary" (click)="tasty.changeCheese (!tasty.cheese)">Add/remove cheese</button>
+     <button class="add-sauce-btn" mat-button (click)="tasty.addSauce (inputValue)">Add sauce</button>
 </div>
