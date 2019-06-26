@@ -1,0 +1,59 @@
+.component-title {
+     text-align: left;
+     font-size: 18px;
+     font-weight: 600;
+     color: #848484;
+     margin-top: 0;
+}
+
+.test-comp-wrapper {
+     margin: 0 auto;
+     width: 50%;
+     text-align: center;
+     background-color: #eee;
+     border-radius: 3px;
+     padding: 20px;
+     margin-top: 30px;
+}
+
+.object-element {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: row;
+     background-color: #a3deb8;
+     width: 30%;
+     margin: 20px auto;
+     padding: 5px;
+     font-size: 14px;
+     border-radius: 3px;
+}
+
+.objarr-element {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     background-color: #e6e6e6;
+     width: 30%;
+     margin: 20px auto;
+     padding: 5px;
+     font-size: 14px;
+     border-radius: 3px;
+}
+
+.objarr-single {
+     padding-top: 3px;
+     padding-bottom: 3px;
+}
+
+.comp-subtitle {
+     background-color: rgb(78, 78, 175);
+     color: white;
+     font-size: 14px;
+     width: 70%;
+     padding: 4px;
+     border-top-left-radius: 3px;
+     border-top-right-radius: 3px;
+     margin: 20px auto;
+}

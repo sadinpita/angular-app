@@ -12,13 +12,15 @@ import {
      MatInputModule
 } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { ObjectComponentComponent } from './object-component/object-component.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponentComponent
+    TestComponentComponent,
+    ObjectComponentComponent
   ],
   imports: [
      BrowserModule,

@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class TestComponentComponent implements OnInit {
-     
      constructor() {
      }
 
@@ -27,7 +26,7 @@ export class TestComponentComponent implements OnInit {
           if (this.testSentence !== '') {
                this.changeSentence('');
                this.showClearMsg = true;
-               setTimeout(()=>{
+               setTimeout(() => {
                     this.showClearMsg = false;
                }, 2000);
                this.inputvalue = '';

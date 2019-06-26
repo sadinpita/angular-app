@@ -1,0 +1,19 @@
+<div class="test-comp-wrapper">
+     <p class="component-title">Object component</p>
+
+     <p class="comp-subtitle">This is type test.</p>
+     <div>{{pizza.name}}</div>
+     <div>{{pizza.toppings}}</div>
+
+     <p class="comp-subtitle">This is singular object test.</p>
+     <div class="object-element">
+          <div>id: {{testObject.id}}, name: {{testObject.name}}, age: {{testObject.age}}</div>
+     </div>
+
+     <p class="comp-subtitle">This is array of objects test.</p>
+     <div class="objarr-element">
+          <div *ngFor="let user of testObjArr" class="objarr-single">
+               {{user.name}}
+          </div>
+     </div>
+</div>
