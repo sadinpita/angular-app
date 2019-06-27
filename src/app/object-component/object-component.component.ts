@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { truncateSync } from 'fs';
+// import { truncateSync } from 'fs';
 
 class Sandwich {
      name: string;

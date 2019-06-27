@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 // import { TestComponentComponent } from './test-component';
@@ -15,6 +16,10 @@ import {
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ObjectComponentComponent } from './object-component/object-component.component';
 
+const appRoutes: Routes = [
+     { path: 'object-component', component: ObjectComponentComponent },
+     { path: 'test-component', component: TestComponentComponent }
+   ];
 
 
 @NgModule({
@@ -24,6 +29,10 @@ import { ObjectComponentComponent } from './object-component/object-component.co
     ObjectComponentComponent
   ],
   imports: [
+     RouterModule.forRoot (
+          appRoutes,
+          { enableTracing: true } // <-- debugging purposes only
+     ),
      FormsModule,
      BrowserModule,
      BrowserAnimationsModule,

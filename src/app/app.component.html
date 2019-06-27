@@ -1,3 +1,10 @@
 <h1>My angular app</h1>
-<app-test-component></app-test-component>
-<app-object-component></app-object-component>
+<!-- <app-test-component></app-test-component> -->
+<!-- <app-object-component></app-object-component> -->
+
+<div class="nav-router">
+     <a routerLink="/test-component" routerLinkActive="active" class="router-link">Test component</a>
+     <a routerLink="/object-component" routerLinkActive="active" class="router-link">Object component</a>
+</div>
+
+<router-outlet></router-outlet>
