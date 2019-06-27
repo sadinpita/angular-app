@@ -18,9 +18,9 @@ import { ObjectComponentComponent } from './object-component/object-component.co
 
 const appRoutes: Routes = [
      { path: 'object-component', component: ObjectComponentComponent },
-     { path: 'test-component', component: TestComponentComponent }
+     { path: 'test-component', component: TestComponentComponent },
+     { path: '',   redirectTo: '/', pathMatch: 'full' },
    ];
-
 
 @NgModule({
   declarations: [
