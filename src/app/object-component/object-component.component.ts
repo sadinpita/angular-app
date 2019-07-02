@@ -1,5 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 
+interface SizesInterface {
+     sizes: string[];
+     availableSizes: string[];
+}
+
+class Sizes implements SizesInterface {
+     constructor (public sizes: string[]) {}
+
+     set availableSizes (sizes: string[]) {
+          this.sizes = sizes;
+     }
+
+     get availableSizes () {
+          return this.sizes;
+     }
+}
+
 class Sandwich {
      name: string;
      cheese: boolean;
@@ -32,6 +49,8 @@ type Pizza = {
 })
 export class ObjectComponentComponent implements OnInit {
 
+     sandwichSizes = new Sizes(['Small', 'Medium']);
+
      constructor() { }
 
      ngOnInit() {
@@ -49,7 +68,7 @@ export class ObjectComponentComponent implements OnInit {
      testObject = {
           id: 0,
           name: 'John Doe',
-          age: '22'          
+          age: '22'
      }
 
      testObjArr = [
@@ -57,6 +76,6 @@ export class ObjectComponentComponent implements OnInit {
           { id: 1, name: 'John Silaya', age: '25'},
           { id: 2, name: 'Fjodor Ruskavski', age: '27'},
           { id: 3, name: 'Nicolas Mendetta', age: '29'}
-     ]
+     ]    
 
 }

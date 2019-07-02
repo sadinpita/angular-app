@@ -40,4 +40,13 @@
 
      <button class="change-cheese-btn"  mat-button color="primary" (click)="tasty.changeCheese (!tasty.cheese)">Add/remove cheese</button>
      <button class="add-sauce-btn" mat-button (click)="tasty.addSauce (inputValue)">Add sauce</button>
+
+     <div style="margin-top: 20px;">
+          These are sizes (from specific class):
+          <ul style="list-style: none; margin: 0; padding: 0;">
+               <li>{{sandwichSizes.sizes[0]}}</li>
+               <li>{{sandwichSizes.sizes[1]}}</li>
+          </ul>
+     </div>
+
 </div>
